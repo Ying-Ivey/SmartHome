@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="330dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="150px"
+            android:layout_marginRight="150px"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/txtTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="100px"
+            android:layout_marginBottom="150px"
+            android:layout_marginRight="150px"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="@color/orange"
+            android:theme="@style/LoginTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="150px"
+                android:layout_marginRight="150px"
+                android:layout_marginBottom="25px"
+                android:drawableEnd="@drawable/ic_person"
+                android:gravity="center"
+                android:inputType="text">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:hint="Email"
+            android:textColorHint="@color/orange"
+            android:theme="@style/LoginTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="150px"
+                android:layout_marginTop="20px"
+                android:layout_marginRight="150px"
+                android:layout_marginBottom="25px"
+                android:drawableEnd="@drawable/ic_email"
+                android:gravity="center"
+                android:inputType="textEmailAddress">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/orange"
+            android:theme="@style/LoginTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="150px"
+                android:layout_marginTop="20px"
+                android:layout_marginRight="150px"
+                android:layout_marginBottom="25px"
+                android:drawableEnd="@drawable/ic_password"
+                android:gravity="center"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/orange"
+            android:theme="@style/LoginTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="150px"
+                android:layout_marginTop="20px"
+                android:layout_marginRight="150px"
+                android:layout_marginBottom="50px"
+                android:drawableEnd="@drawable/ic_password"
+                android:gravity="center"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="150px"
+            android:layout_marginRight="150px"
+            android:layout_marginBottom="25px"
+            android:text="Create"
+            android:textColor="@color/black"></Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
